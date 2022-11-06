@@ -10,39 +10,78 @@
 body {
     display: flex;
     background: linear-gradient(45deg, rgba(0,95,121,1) 30%, rgb(33, 27, 15) 100%);
-    color: rgb(163, 207, 166);
+    color: #E5E7EB;
 }
 
 p {
     padding-bottom: 20px;
 }
 
-.left-container {
+
+.right-container {
     display: flex;
     flex-direction: column;
-    flex-grow: 4;
     justify-content: center;
+    height: 100vh;
+    width: 60vw;
+}
+
+.left-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+
 }
 
 .description {
     background-color: rgb(13, 34, 47);
-    margin-top: 150px;
-    padding: 60px;
+    opacity: .7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
     font-size: 1.3rem;
-    height: 25%;
+    height: 40vh;
+}
+
+.bg {
+    background-image: url(images/susan\ wilkinson.jpg);
+    height: 100vh;
+    width: 40vw;
+    object-fit: cover;
+    opacity: 0.8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+    display: flex;
+    justify-content: center;
+;
+}
+
+.logo {
+
+    display: flex;
+    flex: auto;
+    width: 50%;
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
 }
 
 img {
-    height: 100vh;
-    width: 40%;
-    object-fit: cover;
 
+    height: 250px;
+    filter: invert(100%);
+    filter: drop-shadow(8px 8px 10px rgb(0, 0, 0));
 }
 
 .row {
     display: flex;
-    gap: 20%;
-    flex: 0 1;
+    gap: 15vw;
+    
 }
 
 .column {
@@ -58,25 +97,31 @@ h3 {
 .form {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    flex: 1 1 0;
-    padding-left: 60px;
+    align-items: stretch;
+    padding-left: 10%;
     margin-top: 30px;
+    height: 60vh;
 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
 }
 
 input {
     border: 1px solid #E5E7EB;
-    border-radius: 3px;
-    width: 200px;
-    height: 24px;
+    border-radius: 5px;
+    width: 20vw;
+    height: 25px;
     font-size: 16px;
 }
 
 label {
     width: 200px;
     font-size: 14px;
-    color: rgb(22, 255, 236);
+    color: rgb(143, 202, 197);
     margin-bottom: 5px;
 }
 
@@ -93,6 +138,8 @@ button {
 
 button:hover {
     cursor: pointer;
+    background-color: rgb(32, 143, 143);
+    color: white;
 }
 
 a {
